@@ -17,6 +17,7 @@ services:
             - clarusnet
 
     app-server:
+        env_file: .env
         image: "${ECR_REPO}:latest"
         deploy:
             mode: global
